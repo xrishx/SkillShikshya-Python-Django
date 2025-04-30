@@ -29,5 +29,6 @@ def greet(name):
     return f"Hello, {name}!"
 
 # Function Call
-print(greet(name))
+n =input("Enter your name: ")
+print(greet(n))
 
