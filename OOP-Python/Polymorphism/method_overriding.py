@@ -8,13 +8,17 @@ class shape(ABC):
         return
     
 class circle(shape):
-    def drawa(self):
-        super().draw()
+    def draw(self):
+        super().draw()      # Using super() to call the parent method
         print("Draw a circle")
         return
     
 class rectangle(shape):
     def draw(self):
-        super().draw()
+        super().draw()      # Using super() to call the parent method
         print("Draw a rectangle")
         return
+    
+shapes = [circle(), rectangle()]
+for shp in shapes:
+    shp.draw()

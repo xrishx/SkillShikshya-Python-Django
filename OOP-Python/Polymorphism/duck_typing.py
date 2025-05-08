@@ -19,3 +19,6 @@ anotherBird = AnotherBird()
 # Calling Method
 makeSound(duck)
 makeSound(anotherBird)
+
+# Even though Duck and AnotherBird are different classes,
+# they both respond to sound().
