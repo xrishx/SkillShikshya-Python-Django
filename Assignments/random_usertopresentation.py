@@ -14,7 +14,6 @@ def add_user():
     if add.lower() == "y":
         new_user = input("Enter the name of User: ")
         students.append(new_user)
-        no_students = len(students)
         return add_user()
     elif add.lower() == "n":
         no_students = len(students)
@@ -26,18 +25,23 @@ def add_user():
 def coming_weekdays(no_students):
     random.shuffle(students)
     print(students)
-    for x in range(0, no_students):
-        # timedelta to add to today date
-        total_dates = today_date + datetime.timedelta(days=x)
-        weekday = total_dates.weekday()
-        # Getting weekdays (0 - 6, Mon - Sun)
-        if weekday < 5:
-            print(f"{students[x]} for {total_dates}")
-        else:
-            no_students += 1
-            print(f"No presentation on {total_dates} as weekend.") 
-            
 
+    weekday_count = 0
+    current_date = today_date
+
+    while weekday_count < no_students:
+        weekday = current_date.weekday()
+
+        if weekday < 5:
+            print(f"{students[weekday_count]} for {current_date}.")
+            weekday_count += 1
+        else:
+            print(f"No presentaion on {current_date} and {current_date+datetime.timedelta(days=1)} as it's weekend.")
+        current_date += datetime.timedelta(days=1)
+
+        if weekday >= 5:
+            while current_date.weekday() >= 5:
+                current_date += datetime.timedelta(days=1)
 
 add_user()
 
