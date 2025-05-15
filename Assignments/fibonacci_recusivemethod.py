@@ -7,6 +7,6 @@ def fibo(n):
         return(fibo(n-1) + fibo(n-2))
 
 for i in range(n):
-    print(fibo(i), end=' ')
-    
+    print(fibo(i))
+
 # https://djangocentral.com/fibonacci-sequence/#method-1-fibonacci-sequence-using-recursion
