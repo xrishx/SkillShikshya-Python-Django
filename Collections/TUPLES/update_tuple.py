@@ -1,5 +1,5 @@
 # Tuple is immutable or unchangebale
-# BUT can convert it to list, change it then convert it back
+# BUT can convert it to list, change it then convert it back to tuple
 
 this_tuple = ("apple", "pineapple", "mango")
 
