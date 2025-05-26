@@ -1,3 +1,6 @@
+            # Sets are: #
+'''Mutable, Unordered, Dont allow Duplicates'''
+
 # Using curly braces
 my_set = {1, 2, 3, 4}     # Commmonly Used this
 print(my_set)
