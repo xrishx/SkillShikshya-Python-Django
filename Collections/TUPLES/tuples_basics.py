@@ -1,5 +1,5 @@
             # Tuples are: #
-'''Unmutable, Ordered, Allow Duplicates'''
+'''Immutable, Ordered, Allow Duplicates'''
 
 # using small braces
 my_tuple = (1, 2, 3, 4)     # Commmonly Used this
