@@ -54,3 +54,11 @@ del this_list[0] # also works
 this_list.clear()
 print(this_list)
 
+		## copy() method ##
+# copy the list
+new_list = this_list.copy()
+# also can do
+new_list = list(this_list)
+
+# Shallow copy changes the original list as well
+# Deep copy doesn't change the original list when edited
