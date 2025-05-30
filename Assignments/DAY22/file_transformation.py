@@ -16,7 +16,7 @@ def make_file():
     file_name = input("Enter the file name (don't forget the *.txt): ")
     file_path = os.path.join(name, file_name)
     try:
-        with open(file_path, 'w') as f:
+        with open(file_path, 'x') as f:
             print(f"File '{file_name}' created inside '{name}'.")
     except FileExistsError:
         print("File already exists.")
