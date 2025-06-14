@@ -50,7 +50,7 @@ SELECT name FROM Authors WHERE birth_year < 1950;
 
 --15. Insert a new author into the Authors table.
 INSERT INTO Authors (author_id, name, birth_year, country)
-VALUES (5, 'Isaac Asimov', 1920, 'Russia');
+VALUES (6, 'Isaac Asimov', 1920, 'Russia');
 
 --16. Display the total number of members.
 SELECT COUNT(*) FROM Members;
